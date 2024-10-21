@@ -3,6 +3,8 @@ import pytest
 from fastapi.testclient import TestClient
 from main import app
 
+client = TestClient(app)
+
 # TODO: implement the first test. Change the function name and input as needed
 def test_one():
     """
