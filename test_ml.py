@@ -40,7 +40,7 @@ def test_two():
         "hours-per-week": 40,
         "native-country": "United-States",
     }
-    response = client.post("/data/", json=data)
+    response = client.post("/predict/", json=data)
     assert response.status_code == 200
     assert "result" in response.json()
 
@@ -57,6 +57,6 @@ def test_three():
         "education": "HS-grad",
         "education-num": 10,
     }
-    response = client.post("/data/", json=invalid_data)
+    response = client.post("/predict/", json=invalid_data)
     assert response.status_code == 422
 
