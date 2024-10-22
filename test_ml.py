@@ -3,6 +3,9 @@ import pytest
 from fastapi.testclient import TestClient
 from main import app
 import pandas as pd
+from ml.data import process_data  # Import the process_data function
+from ml.model import train_model, compute_model_metrics, inference 
+from sklearn.ensemble import RandomForestClassifier
 
 client = TestClient(app)
 
