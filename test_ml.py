@@ -44,10 +44,9 @@ def test_train_model():
 
 # TODO: implement the second test. Change the function name and input as needed
 def test_inference():
-   """
+    """
     Test that the model inference runs correctly.
     """
-    # Create a small dataset
     data = {
         "age": [37],
         "workclass": ["Private"],
